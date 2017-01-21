@@ -1,0 +1,52 @@
+h3 {
+    font-size: 130%;
+    color:     #000000;
+    background-color: lightseagreen;
+}
+
+h4 {
+    color:  #ffffff;
+    background-color: #828DA6;
+}
+
+td {
+    background-color: #eeeeee;
+    color:            000000;
+}
+
+table tr:first-child td {
+    background-color: #cccccc;
+    color:            000000;
+}
+
+table th {
+    background-color: #cccccc;
+    color:            000000;
+}
+
+pre {
+    background-color: efefef;
+}
+
+.code {
+    background: #EFEFEF;
+    margin-top:
+}
+
+.output {
+    color: #FFFFFF;
+    background: #837A67;
+}
+
+ul.inlinelist {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+pre {
+    font-size: 12px;
+    word-break: break-word;
+    word-wrap: normal;
+    white-space: pre-wrap;
+}

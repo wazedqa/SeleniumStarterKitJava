@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Zalande.de Test Suite" parallel="methods" verbose="1" thread-count="5">
+
+    <listeners>
+        <listener class-name="de.zalando.project.selenium.report.TestReportListener"/>
+        <listener class-name="de.zalando.project.selenium.retry.RetryListener"/>
+    </listeners>
+
+    <!-- For standalone browsers -->
+    <parameter name="driver.browser" value="chrome" />
+
+    <test name="Home page test">
+        <packages>
+            <package name="de.zalando.project.selenium.testcase.*"/>
+        </packages>
+    </test>
+
+</suite>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Selenium Test Report</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h3>Summary</h3>
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tr>
+        <td valign="top">Tests passed</td>
+        <td valign="top">{{ percentageOfSuccessfulTests }}% passed</td>
+    </tr>
+    <tr>
+        <td valign="top">Failed</td>
+        <td valign="top">{{ numberOfFailedTests }}</td>
+    </tr>
+    <tr>
+        <td valign="top">Duration</td>
+        <td valign="top">{{ durationAsText }}</td>
+    </tr>
+</table>
+
+<h3>Failed Tests</h3>
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tbody>
+    <tr>
+        <td width="12%" valign="top"><b>Test method</b></td>
+        <td width="78%" valign="top"><b>Error</b></td>
+        <td width="10%" valign="top"><b>Screen shot</b></td>
+    </tr>
+    {{#failedTests}}
+    <tr>
+        <td valign="top">{{ testName }}()</td>
+        <td valign="top"><pre>{{ stackTrace }}</pre></td>
+        <td align="center" valign="top"><a href="{{ screenshotFileName }}" target="_blank"><img width="100%"
+                                                                                                src="{{ screenshotFileName }}"/></a>
+        </td>
+    </tr>
+    {{/failedTests}}
+    </tbody>
+</table>
+</body>
+</html>

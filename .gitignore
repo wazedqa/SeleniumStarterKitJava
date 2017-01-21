@@ -1,0 +1,21 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+log/
+target/
+
+.idea/
+target
+*.iml
+.DS_Store
+test-output/
+target/
+velocity.log
